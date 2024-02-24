@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <!-- Очистить -->
+      <button onclick="clearDisplay()" class="function">C</button>
+      <!-- Удалить последний символ -->
+      <button onclick="removeLastChar()" class="function">←</button>
+      <!-- Деление -->
+      <button onclick="appendToDisplay(' / ')" class="operator">/</button>
+      <!-- Открыть скобку -->
+      <button onclick="appendToDisplay('(')" class="operator">(</button>
+      <!-- Цифра 7 -->
+      <button onclick="appendToDisplay('7')">7</button>
+      <!-- Цифра 8 -->
+      <button onclick="appendToDisplay('8')">8</button>
+      <!-- Цифра 9 -->
+      <button onclick="appendToDisplay('9')">9</button>
+      <!-- Закрыть скобку -->
+      <button onclick="appendToDisplay(')')" class="operator">)</button>
+      <!-- Цифра 4 -->
+      <button onclick="appendToDisplay('4')">4</button>
+      <!-- Цифра 5 -->
+      <button onclick="appendToDisplay('5')">5</button>
+      <!-- Цифра 6 -->
+      <button onclick="appendToDisplay('6')">6</button>
+      <!-- Умножение -->
+      <button onclick="appendToDisplay(' * ')" class="operator">×</button>
+      <!-- Цифра 1 -->
+      <button onclick="appendToDisplay('1')">1</button>
+      <!-- Цифра 2 -->
+      <button onclick="appendToDisplay('2')">2</button>
+      <!-- Цифра 3 -->
+      <button onclick="appendToDisplay('3')">3</button>
+      <!-- Вычитание -->
+      <button onclick="appendToDisplay(' - ')" class="operator">-</button>
+      <!-- Цифра 0 -->
+      <button onclick="appendToDisplay('0')">0</button>
+      <!-- Десятичная точка -->
+      <button onclick="appendToDisplay('.')">.</button>
+      <!-- Равно -->
+      <button onclick="calculateResult()" class="equals">=</button>
+      <!-- Сложение -->
+      <button onclick="appendToDisplay(' + ')" class="operator">+</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
